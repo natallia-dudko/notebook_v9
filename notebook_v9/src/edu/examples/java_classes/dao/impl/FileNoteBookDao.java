@@ -51,10 +51,7 @@ public class FileNoteBookDao implements NoteBookDao {
 			while ((line = breader.readLine()) != null) {
 
 				allNotes.add(formText(line));				
-
 			}			
-		
-			breader.close();
 
 		} catch (IOException e) {
 			throw new RuntimeException("Somthing Wrong!");
